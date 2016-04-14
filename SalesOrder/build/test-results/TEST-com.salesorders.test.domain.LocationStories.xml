@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.salesorders.test.domain.LocationStories" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-03-10T11:36:34" hostname="THD-ER-003" time="0.865">
+  <properties/>
+  <testcase name="run" classname="com.salesorders.test.domain.LocationStories" time="0.865"/>
+  <system-out><![CDATA[Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeouts=300,threads=1,failOnStoryTimeout=false]
+Running story com/salesorders/test/stories/RecordInsert.story
+:::::::::::name::BigStore
+RESSS::true
+Generating reports view to 'D:\eclipseworkplace\SalesOrder\target\jbehave' using formats '[html, stats]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 2 stories (of which 0 pending) containing 1 scenarios (of which 0 pending)
+]]></system-out>
+  <system-err><![CDATA[Mar 10, 2016 12:36:33 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [com/salesorders/test/stories/config.xml]
+Mar 10, 2016 12:36:34 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@3f6f40c3: startup date [Thu Mar 10 12:36:34 CET 2016]; root of context hierarchy
+]]></system-err>
+</testsuite>

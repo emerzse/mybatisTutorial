@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Mar 16 11:22:37 CET 2016
+com/salesorders/test/stories/RecordInsert.story=0
+threads=1
+total=0
+threadAverage=0

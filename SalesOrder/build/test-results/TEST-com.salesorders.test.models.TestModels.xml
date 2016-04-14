@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.salesorders.test.models.TestModels" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-10T11:36:35" hostname="THD-ER-003" time="0.001">
+  <properties/>
+  <testcase name="canCostructAAsset" classname="com.salesorders.test.models.TestModels" time="0.0"/>
+  <testcase name="canCostructALoacation" classname="com.salesorders.test.models.TestModels" time="0.0"/>
+  <testcase name="canCostructAChildAsset" classname="com.salesorders.test.models.TestModels" time="0.001"/>
+  <testcase name="canConstructASalesOrderTrans" classname="com.salesorders.test.models.TestModels" time="0.0"/>
+  <system-out><![CDATA[Asset:[assetid:0, assetType: PARRENTASSET, name: chair, description: small white chair, size: (5,6), color: white]
+Location:[id: 0, name: BigStore, address:Elm st 13]
+Asset:[assetid:0, assetType: CHILDASSET, name: dry Food, description: 1 selected dry foog, size: (4,23), color: Black , descripton: Childeren]
+Asset:[assetid:0, assetType: PARRENTASSET, name: chair, description: small white chair, size: (5,6), color: white]
+Asset:[assetid:0, assetType: CHILDASSET, name: dry Food, description: 1 selected dry foog, size: (4,23), color: Pink , descripton: Childeren]
+SalesOrder:[transId:0 , item: Asset:[assetid:0, assetType: PARRENTASSET, name: chair, description: small white chair, size: (5,6), color: white], location: Location:[id: 0, name: BigStore, address:Elm st 13], quantity: 1, price: 100.0, currency: null]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

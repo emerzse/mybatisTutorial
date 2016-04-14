@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.salesorders.mappers.AssetMapper">
+	<resultMap type="Asset" id="AssetResult">
+	   <id	   property = "assetId"     column = "asset_Id"/>
+       <result property = "name"        column = "name"/>
+       <result property = "description" column = "description"/>
+       <result property = "sizeX"       column = "sizex"/>
+       <result property = "sizeY"       column = "sizey"/>
+       <result property = "color"       column = "color"/>
+       <result property = "assetType" jdbcType="VARCHAR" typeHandler="org.apache.ibatis.type.EnumTypeHandler" column = "assettype"/>
+	</resultMap>
+	
+    <resultMap  type="ChildAsset" id="ChildResult" extends="AssetResult" >
+       <result property = "childDescription"        column = "CHILD_DESCRIPTION"/>
+	</resultMap>
+</mapper>

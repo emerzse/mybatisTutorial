@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>com.salesorders.test.stories.RecordInsert</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">com/salesorders/test/stories/RecordInsert.story</div>
+<div class="givenStories">GivenStories:
+<div class="givenStory">com/salesorders/test/stories/substory/InsertLocation.story#{id1:creat_Location1;id2:creat_Location2;id3:creat_Locations} {}</div>
+</div>
+<div class="story">
+<h1></h1>
+<div class="path">com/salesorders/test/stories/substory/InsertLocation.story</div>
+<div class="scenario">
+<h2>Scenario: Creating location 1</h2>
+<div class="step successful">Given the name of location <span class="step parameter">BigStore</span> and id is <span class="step parameter">Lakatos utca</span></div>
+<div class="step successful">When the create loaction is clicked, save</div>
+<div class="step successful">Then the Location must be saved and should return <span class="step parameter">1</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: Creating location 2</h2>
+<div class="step successful">Given the name of location <span class="step parameter">BigMall</span> and id is <span class="step parameter">Gabor utca</span></div>
+<div class="step successful">When the create loaction is clicked, save</div>
+<div class="step successful">Then the Location must be saved and should return <span class="step parameter">1</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: Creating locations 3</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the name of location &lt;location&gt; and id is &lt;adress&gt;</div>
+<div class="step">When the create loaction is clicked, save</div>
+<div class="step">Then the Location must be saved and should return 1</div>
+<table>
+<thead>
+<tr>
+<th>location</th><th>adress</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Spar</td><td>Kaposvar utca</td></tr>
+<tr>
+<td>Tesco</td><td>lapos volgy</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {location=Spar, adress=Kaposvar utca, id3=creat_Locations}</h3>
+<div class="step successful">Given the name of location <span class="step parameter">Spar</span> and id is <span class="step parameter">Kaposvar utca</span></div>
+<div class="step successful">When the create loaction is clicked, save</div>
+<div class="step successful">Then the Location must be saved and should return <span class="step parameter">1</span></div>
+
+<h3 class="example">Example: {location=Tesco, adress=lapos volgy, id3=creat_Locations}</h3>
+<div class="step successful">Given the name of location <span class="step parameter">Tesco</span> and id is <span class="step parameter">lapos volgy</span></div>
+<div class="step successful">When the create loaction is clicked, save</div>
+<div class="step successful">Then the Location must be saved and should return <span class="step parameter">1</span></div>
+</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Creating items</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the name of item &lt;itemname&gt; and description &lt;description&gt;</div>
+<div class="step">When the create item is clicked, save</div>
+<div class="step">Then the item must be saved and should return &lt;value&gt;</div>
+<table>
+<thead>
+<tr>
+<th>itemname</th><th>description</th><th>value</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>fish</td><td>Salmon</td><td>true</td></tr>
+<tr>
+<td>bycicle</td><td>red cycle</td><td>false</td></tr>
+<tr>
+<td>Keyboard</td><td>hungarian type</td><td>true</td></tr>
+<tr>
+<td>Bag</td><td>woman bag</td><td>true</td></tr>
+<tr>
+<td>brush</td><td>oralB</td><td>true</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {itemname=fish, description=Salmon, value=true}</h3>
+<div class="step successful">Given the name of item <span class="step parameter">fish</span> and description <span class="step parameter">Salmon</span></div>
+<div class="step successful">When the create item is clicked, save</div>
+<div class="step successful">Then the item must be saved and should return <span class="step parameter">true</span></div>
+
+<h3 class="example">Example: {itemname=bycicle, description=red cycle, value=false}</h3>
+<div class="step successful">Given the name of item <span class="step parameter">bycicle</span> and description <span class="step parameter">red cycle</span></div>
+<div class="step successful">When the create item is clicked, save</div>
+<div class="step successful">Then the item must be saved and should return <span class="step parameter">false</span></div>
+
+<h3 class="example">Example: {itemname=Keyboard, description=hungarian type, value=true}</h3>
+<div class="step successful">Given the name of item <span class="step parameter">Keyboard</span> and description <span class="step parameter">hungarian type</span></div>
+<div class="step successful">When the create item is clicked, save</div>
+<div class="step successful">Then the item must be saved and should return <span class="step parameter">true</span></div>
+
+<h3 class="example">Example: {itemname=Bag, description=woman bag, value=true}</h3>
+<div class="step successful">Given the name of item <span class="step parameter">Bag</span> and description <span class="step parameter">woman bag</span></div>
+<div class="step successful">When the create item is clicked, save</div>
+<div class="step successful">Then the item must be saved and should return <span class="step parameter">true</span></div>
+
+<h3 class="example">Example: {itemname=brush, description=oralB, value=true}</h3>
+<div class="step successful">Given the name of item <span class="step parameter">brush</span> and description <span class="step parameter">oralB</span></div>
+<div class="step successful">When the create item is clicked, save</div>
+<div class="step successful">Then the item must be saved and should return <span class="step parameter">true</span></div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

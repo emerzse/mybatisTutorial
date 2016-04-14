@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.salesorders.test.classes.SalesOrderTransServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-03-10T11:36:33" hostname="THD-ER-003" time="0.053">
+  <properties/>
+  <testcase name="testFindAllSalesOrderTrans" classname="com.salesorders.test.classes.SalesOrderTransServiceTest" time="0.003"/>
+  <testcase name="testcreateSalesOrderTrans" classname="com.salesorders.test.classes.SalesOrderTransServiceTest" time="0.048"/>
+  <testcase name="testFindASalesOrderTransById" classname="com.salesorders.test.classes.SalesOrderTransServiceTest" time="0.002"/>
+  <system-out><![CDATA[SalesOrder:[transId:1 , item: null, location: null, quantity: 100, price: 25400.0, currency: HUF]
+SalesOrder:[transId:2 , item: Asset:[assetid:5, assetType: PARRENTASSET, name: Egg, description: chicken egg, size: (5,7), color: yellow], location: Location:[id: 1, name: Big Meal Store, address:Elm street 13], quantity: 5, price: 200.0, currency: HUF]
+SalesOrder:[transId:2 , item: null, location: null, quantity: 5, price: 200.0, currency: HUF]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

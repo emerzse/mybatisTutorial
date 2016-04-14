@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.salesorders.mappers.SalesOrderTransMapper">
+	<resultMap type="SalesOrderTrans"  id="SalesOrderTransResult">
+	   <id	   property = "transId"    column = "trans_id"/>
+       <result property = "assetId"       column = "assetid"/>
+       <result property = "locationId"   column = "location_id"/>
+       <result property = "quantity"   column = "quantity"/>
+       <result property = "price"      column = "price"/>
+       <result property = "currency"      column = "currency"/>
+	</resultMap>
+	
+	<insert id="insertNewASalesOrderTrans" parameterType="SalesOrderTrans">
+		INSERT INTO SALESORDERTRANS
+		<choose>
+			<when test ="currency != null">
+		 	(ASSETID,LOCATION_ID,QUANTITY,PRICE, CURRENCY) 
+				 VALUES(#{assetId},#{locationId},#{quantity},#{price},#{currency})
+			</when>
+			<when test ="currency == null">
+			(ASSETID,LOCATION_ID,QUANTITY,PRICE) 
+				 VALUES(#{assetId},#{locationId},#{quantity},#{price})
+			</when>
+		</choose>
+
+		
+	</insert>
+</mapper>
