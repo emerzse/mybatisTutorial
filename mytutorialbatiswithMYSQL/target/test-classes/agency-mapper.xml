@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mytutorialbatis.Agency">
+
+    <select id="selectAgency" resultType="mytutorialbatis.Agency">
+        select ID, NAME from AGENCY where
+        id = #{id}
+    </select>
+
+    <update id="createTable">
+        CREATE TABLE AGENCY (ID INT PRIMARY KEY, NAME VARCHAR(50))
+    </update>
+    
+    <update id="seedAgency">
+      INSERT INTO AGENCY VALUES (10,'American family insurance');
+      INSERT INTO AGENCY VALUES (11,'h family insurance');
+   <!--        INSERT INTO AGENCY VALUES (12,'x family insurance') and
+        INSERT INTO AGENCY VALUES (13,'j family insurance')and
+        INSERT INTO AGENCY VALUES (14,'s family insurance')and
+        INSERT INTO AGENCY VALUES (15,'p family insurance')and
+        INSERT INTO AGENCY VALUES (16,'q family insurance')and
+        INSERT INTO AGENCY VALUES (17,'f family insurance')and
+        INSERT INTO AGENCY VALUES (18,'l family insurance') -->
+    </update>
+
+</mapper>

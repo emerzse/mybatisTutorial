@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mybatis.gradle.testclasses.StudentServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-25T14:16:10" hostname="THD-ER-003" time="0.297">
+  <properties/>
+  <testcase name="testFindAllStudents" classname="com.mybatis.gradle.testclasses.StudentServiceTest" time="0.282"/>
+  <testcase name="testfindStudentById" classname="com.mybatis.gradle.testclasses.StudentServiceTest" time="0.004"/>
+  <testcase name="testUpdateStudents" classname="com.mybatis.gradle.testclasses.StudentServiceTest" time="0.006"/>
+  <testcase name="testInsertStudents" classname="com.mybatis.gradle.testclasses.StudentServiceTest" time="0.004"/>
+  <system-out><![CDATA[Student[studID: 2, name :GEZA, email:GEZA@GMAIL.COM, dob: Sat Jan 28 00:00:00 CET 1995]
+Student[studID: 3, name :Solo, email:solo@gmail.com, dob: Thu Feb 25 00:00:00 CET 2016]
+Student[studID: 1, name :GolyaGolyaGolyaZSOLT, email:zsolt.golya@tcs.com, dob: Wed Apr 21 00:00:00 CEST 1999]
+Student[studID: 3, name :Solo, email:solo@gmail.com, dob: Thu Feb 25 00:00:00 CET 2016]
+Student[studID: 1, name :GolyaGolyaGolyaZSOLT, email:zsolt.golya@tcs.com, dob: Wed Apr 21 00:00:00 CEST 1999]
+Student[studID: 1, name :GolyaGolyaGolyaGolyaZSOLT, email:zsolt.golya@tcs.com, dob: Wed Apr 21 00:00:00 CEST 1999]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

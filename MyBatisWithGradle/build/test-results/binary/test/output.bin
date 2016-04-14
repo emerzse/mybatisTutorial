@@ -1,0 +1,6 @@
+YStudent[studID: 2, name :GEZA, email:GEZA@GMAIL.COM, dob: Sat Jan 28 00:00:00 CET 1995]
+YStudent[studID: 3, name :Solo, email:solo@gmail.com, dob: Thu Feb 25 00:00:00 CET 2016]
+oStudent[studID: 1, name :GolyaGolyaGolyaZSOLT, email:zsolt.golya@tcs.com, dob: Wed Apr 21 00:00:00 CEST 1999]
+YStudent[studID: 3, name :Solo, email:solo@gmail.com, dob: Thu Feb 25 00:00:00 CET 2016]
+oStudent[studID: 1, name :GolyaGolyaGolyaZSOLT, email:zsolt.golya@tcs.com, dob: Wed Apr 21 00:00:00 CEST 1999]
+tStudent[studID: 1, name :GolyaGolyaGolyaGolyaZSOLT, email:zsolt.golya@tcs.com, dob: Wed Apr 21 00:00:00 CEST 1999]
